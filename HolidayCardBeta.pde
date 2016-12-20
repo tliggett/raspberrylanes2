@@ -8,7 +8,7 @@ PImage background;
 float startTime;
 String unEncrypted;
 void setup(){
-    fullScreen();
+    size(1600,900);
     background(0);
     background = loadImage("backgroundx.jpg");
     textSize(32);

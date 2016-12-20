@@ -4,25 +4,25 @@ int shift;
 int asciiShift;
 String[] goal;
 float time;
-PImage background;
+//PImage background;
 float startTime;
 String unEncrypted;
+
+
 void setup(){
     size(800,450);
     background(0);
     //background = loadImage("backgroundx.jpg");
     textSize(32);
-    
     fill(0);
     time = 0;
     startTime = millis();
     goal = new String[] {"Merry Christmas", "We wish you a _____ ________"};
-   message = "";
-   unEncrypted = "";
-   shift = Math.round(random(10)-5);
-   asciiShift = Math.round(random(10)-5);
-   keys = new String []  
-   {"qwertyuiop","asdfghjkl","zxcvbnm","QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
+    message = "";
+    unEncrypted = "";
+    shift = Math.round(random(10)-5);
+    asciiShift = Math.round(random(10)-5);
+    keys = new String []  {"qwertyuiop","asdfghjkl","zxcvbnm","QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
   
 
 }

@@ -4,7 +4,7 @@ int shift;
 int asciiShift;
 String[] goal;
 float time;
-//PImage background;
+PImage background;
 float startTime;
 String unEncrypted;
 
@@ -12,7 +12,7 @@ String unEncrypted;
 void setup(){
     size(800,450);
     background(0);
-    //background = loadImage("backgroundx.jpg");
+    background = loadImage("backgroundx.jpg");
     textSize(32);
     fill(0);
     time = 0;
@@ -28,7 +28,7 @@ void setup(){
 }
 void draw(){
   background(0);
-  //image(background, 0,0, width,height);
+  image(background, 0,0, width,height);
   textSize(64);
   fill(255);
   text(message, 0,100, 900, 1000);

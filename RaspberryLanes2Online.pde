@@ -118,6 +118,15 @@ void keyPressed(){
   
 }
 
+void mousePressed(){
+    if(gameLive){
+      Raspberry.jump();
+    }else{
+     startGame(); 
+      
+    }
+}
+
 interface obstacle{
  void move();
  void display();

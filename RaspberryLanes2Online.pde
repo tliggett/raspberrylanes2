@@ -45,7 +45,10 @@ void setup() {
 }
 
 void draw() { 
+     for(Background b : back){
+     b.display();
     
+    } 
     if(gameLive){
      score += 1.25;
     if(score > 500){
@@ -59,7 +62,7 @@ void draw() {
     }
     
     for(Background b : back){
-     b.display();
+     
      b.move();
     } 
    for(int i = 0; i< obstacles.length; i++){

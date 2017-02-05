@@ -45,7 +45,7 @@ void setup() {
 }
 
 void draw() { 
-    background(255);
+    
     if(gameLive){
      score += 1.25;
     if(score > 500){

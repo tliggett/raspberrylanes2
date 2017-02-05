@@ -3,7 +3,7 @@
 //soundtrack - Horse with no name; House of the rising sun; The good, the bad, the ugly theme
 
 static Horse Raspberry;
-Background[] background;
+Background[] back;
 static obstacle[] obstacles;
 boolean gameLive;
 int level;
@@ -17,7 +17,6 @@ PImage backgroundPicture;
 
 void setup() {
   size(1200, 450);
-  background(255);
   frameRate(32);
   textSize(32);
   fill(255,0,0);
@@ -37,16 +36,16 @@ void setup() {
   Raspberry = new Horse(new PVector(30, height - 250), horseAnimation);
 
   
-  background = new Background[] {new Background(0,0),new Background(width,0)};
+  back = new Background[] {new Background(0,0),new Background(width,0)};
   Raspberry.frameAcc = 1.25;
-      background(255);
-     for(Background b : background){
+      
+     for(Background b : back){
      b.display(); 
     }
 }
 
 void draw() { 
-   
+    background(255);
     if(gameLive){
      score += 1.25;
     if(score > 500){
@@ -59,7 +58,7 @@ void draw() {
      }
     }
     
-    for(Background b : background){
+    for(Background b : back){
      b.display();
      b.move();
     } 
@@ -92,7 +91,7 @@ void draw() {
 void startGame(){
   gameLive = true;
   Raspberry = new Horse(new PVector(30, height - 250), horseAnimation);
-  background = new Background[] {new Background(0,0),new Background(width,0)};
+  back = new Background[] {new Background(0,0),new Background(width,0)};
   Raspberry.frameAcc = 1.25;
   obstacles = new obstacle[]{new Tumbleweed(), null, null};
   level = 1;

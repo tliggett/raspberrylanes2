@@ -96,7 +96,7 @@ void startGame(){
   Raspberry = new Horse(new PVector(30, height - 250), horseAnimation);
   back = new Background[] {new Background(0,0),new Background(width,0)};
   Raspberry.frameAcc = 1.25;
-  obstacles = new obstacle[]{new Tumbleweed(), null, null};
+  obstacles = new obstacle[]{new Rattler(), null, null};
   level = 1;
   score = 0;
   

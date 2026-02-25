@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Raspberry Lanes 2",
+    "slug": "raspberry-lanes-2",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/horse/horse_0000.gif",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "requiresFullScreen": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000000"
+      }
+    },
+    "plugins": [
+      "expo-screen-orientation",
+      "expo-asset"
+    ]
+  }
+}
